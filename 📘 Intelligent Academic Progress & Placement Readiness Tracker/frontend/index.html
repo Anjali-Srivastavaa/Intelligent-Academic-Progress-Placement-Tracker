@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Tracker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Placement Readiness Tracker</h1>
+        
+        <div class="card">
+            <h2>Enter Student ID</h2>
+            <div class="input-group">
+                <input type="number" id="student_id" placeholder="Student ID (e.g., 1)" value="1">
+                <button onclick="loadScore()">Check Readiness Score</button>
+            </div>
+        </div>
+
+        <div id="result-card" class="card result-card" style="display: none;">
+            <h2>Placement Analytics Result</h2>
+            <div class="score-display">
+                <span class="label">Placement Score:</span>
+                <span id="score-value" class="value">0</span>
+            </div>
+            <div class="details">
+                <p>CGPA: <span id="cgpa-value">0</span></p>
+                <p>Skills Count: <span id="skills-value">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
